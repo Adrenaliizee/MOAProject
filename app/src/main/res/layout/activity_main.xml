@@ -4,6 +4,27 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView android:text="SuperVeelSwag" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:id="@+id/imgDeer"
+        android:layout_above="@+id/imgLion"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:id="@+id/imgLion"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/imgDeer" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Leeuwen, Herten &amp; Pinguins"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
