@@ -19,12 +19,11 @@
         android:layout_alignParentBottom="true"
         android:layout_alignStart="@+id/imgDeer" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Leeuwen, Herten &amp; Pinguins"
-        android:id="@+id/textView"
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:id="@+id/imgLogo"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
+
 </RelativeLayout>

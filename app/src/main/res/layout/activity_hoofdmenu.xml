@@ -7,12 +7,58 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="nl.larsvelthuis.moaproject.Hoofdmenu">
 
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:id="@+id/imgLogo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Game"
+        android:id="@+id/btnNewGame"
+        android:layout_below="@+id/imgLogo"
+        android:layout_marginTop="68dp"
+        android:layout_alignEnd="@+id/imgLogo"
+        android:layout_alignStart="@+id/imgLogo" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Highscores"
+        android:id="@+id/btnHighscores"
+        android:layout_below="@+id/btnNewGame"
+        android:layout_alignStart="@+id/btnNewGame"
+        android:layout_alignEnd="@+id/btnNewGame" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:id="@+id/btnSettings"
+        android:layout_below="@+id/btnHighscores"
+        android:layout_alignStart="@+id/btnHighscores"
+        android:layout_alignEnd="@+id/btnHighscores" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        android:id="@+id/btnExit"
+        android:layout_below="@+id/btnSettings"
+        android:layout_alignStart="@+id/btnSettings"
+        android:layout_alignEnd="@+id/btnSettings"
+        android:onClick="exitApp" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="TestText after Splash"
-        android:id="@+id/textView2"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Choose an option below!"
+        android:id="@+id/txtChooseOption"
+        android:layout_below="@+id/imgLogo"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/imgLogo" />
 </RelativeLayout>
